@@ -1,7 +1,7 @@
 var config = {
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
-    publicPath: './public/',
+    publicPath: 'dist/',
     filename: 'bundle.js',
   },
   devServer: {
