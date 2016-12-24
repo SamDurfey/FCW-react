@@ -1,55 +1,51 @@
+import styles from './App.scss'
 import React from 'react'
 import ReactDom from 'react-dom'
-import { Dropdown, Navbar, NavItem } from 'react-materialize'
 
 export default React.createClass({
   render() {
     return <div id="header">
 
-      <div id="banner">
-        <h6>(This Is The Banner)</h6>
-        <h1>Welcome to First City Wellness</h1>
-      </div>
-
-      <div id="navbar">
-        <Navbar left>
-          <NavItem href="/">Home</NavItem>
-
-          <Dropdown options={{hover: true, belowOrigin: true}} trigger={
-            <NavItem href="/services">Services</NavItem>
-          }>
-            <NavItem>Accupuncture & Chinese Medicine</NavItem>
-            <NavItem>Walk-In Clinics</NavItem>
-            <NavItem>Beautypunture&reg; Facial Rejuvenation</NavItem>
-            <NavItem>Custom Cosmetics and Makeup Artistry</NavItem>
-            <NavItem>TLS Weight Loss Solution</NavItem>
-            <NavItem>Ionic Detox Foot Baths</NavItem>
-          </Dropdown>
-
-          <Dropdown options={{hover: true, belowOrigin: true}} trigger={
-            <NavItem href="/center">Center</NavItem>
-          }>
-            <NavItem>Our Staff</NavItem>
-            <NavItem>Events Calendar</NavItem>
-            <NavItem>Contact FCW</NavItem>
-          </Dropdown>
-
-          <NavItem href="/boutique">Wellness Boutique</NavItem>
-
-          <Dropdown options={{hover: true, belowOrigin: true}} trigger={
-            <NavItem href="/appointments">Appointments</NavItem>
-          }>
-            <NavItem>Online Scheduling</NavItem>
-            <NavItem>New Client Resources</NavItem>
-            <NavItem>Patient Portal</NavItem>
-          </Dropdown>
-
-          <NavItem href="/blog">Blog</NavItem>
-          <NavItem href="/testimonials">Testimonials</NavItem>
-        </Navbar>
-
-
-      </div>
+      <ul id="services-dropdown" className="dropdown-content">
+        <li><a href="#">Accupuncture & Chinese Medicine</a></li>
+        <li><a href="#">Walk-In Clinics</a></li>
+        <li><a href="#">Beautypunture&reg; Facial Rejuvenation</a></li>
+        <li><a href="#">Custom Cosmetics and Makeup Artistry</a></li>
+        <li><a href="#">TLS Weight Loss Solution</a></li>
+        <li><a href="#">Ionic Detox Foot Baths</a></li>
+      </ul>
+      <ul id="center-dropdown" className="dropdown-content">
+        <li><a href="#">Our Staff</a></li>
+        <li><a href="#">Events Calendar</a></li>
+        <li><a href="#">Contact FCW</a></li>
+      </ul>
+      <ul id="appointments-dropdown" className="dropdown-content">
+        <li><a href="#">Online Scheduling</a></li>
+        <li><a href="#">New Client Resources</a></li>
+        <li><a href="#">Patient Portal</a></li>
+      </ul>
+      <nav>
+        <div className="nav-wrapper">
+          <ul className="left hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a className="dropdown-button" href="/services" data-activates="services-dropdown">Services
+              Available</a></li>
+            <li><a className="dropdown-button" href="/center" data-activates="center-dropdown">Our
+              Center</a></li>
+            <li><a href="/boutique">Wellness Boutique</a></li>
+            <li><a className="dropdown-button" href="/appointments"
+                   data-activates="appointments-dropdown">Appointments</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
+  },
+  componentDidMount() {
+    $(".dropdown-button").dropdown({
+      hover: true,
+      belowOrigin: true
+    });
   }
 })

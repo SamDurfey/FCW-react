@@ -1,0 +1,19 @@
+nav {
+    background-color: #202020;
+  ul li {
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+.dropdown-content li {
+  background-color: #202020;
+  a {
+    color: white;
+    font-size: 1rem;
+  }
+  &:hover {
+    background-color: black;
+  }
+}
