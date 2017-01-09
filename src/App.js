@@ -6,13 +6,14 @@ import Footer from './Footer.js'
 
 export default React.createClass({
   render() {
-    return <div id="header">
-      <div id="banner">
+    return <div id="top-wrapper">
+      <div id="banner-wrapper">
         <h1>This is the banner.</h1>
       </div>
       <Navbar/>
-      <div><h2>Content Goes Here</h2></div>
-      <Footer/>
+      <div id="main-wrapper"><h2>Content Goes Here</h2>
+        <Footer/>
+      </div>
     </div>
   }
 })
