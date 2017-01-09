@@ -9,10 +9,7 @@ export default React.createClass({
 
       <ul id="services-dropdown" className="dropdown-content">
         <li><a href="#">Accupuncture & Chinese Medicine</a></li>
-        <li><a href="#">Walk-In Clinics</a></li>
-        <li><a href="#">Beautypunture&reg; Facial Rejuvenation</a></li>
-        <li><a href="#">Custom Cosmetics and Makeup Artistry</a></li>
-        <li><a href="#">TLS Weight Loss Solution</a></li>
+        <li><a href="#">Skincare: Beautypunture&reg; Facial Rejuvenation</a></li>
         <li><a href="#">Ionic Detox Foot Baths</a></li>
       </ul>
       <ul id="center-dropdown" className="dropdown-content">
