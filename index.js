@@ -7,8 +7,7 @@ import Testimonials from './src/Testimonials.js'
 
 render ((
     <Router history={hashHistory}>
-      <Route path="/" component={App}>
-        <Route path="testimonials" component={Testimonials}/>
-      </Route>
+      <Route path="/" component={App}/>
+      <Route path="testimonials" component={Testimonials}/>
     </Router>
 ), document.getElementById('app'))
