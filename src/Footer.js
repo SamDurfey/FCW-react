@@ -1,6 +1,5 @@
 import styles from './Footer.scss'
 import React from 'react'
-import ReactDom from 'react-dom'
 import apiKey from './env.js'
 
 const iconString = '{ This is where contact icons go }';

@@ -4,7 +4,8 @@
   "description": "website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "build": "webpack -p"
   },
   "author": "Samuel Durfey",
   "license": "ISC",
