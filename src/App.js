@@ -12,6 +12,7 @@ export default React.createClass({
       </div>
       <Navbar/>
       <div id="main-wrapper"><h2>Content Goes Here</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid architecto aspernatur beatae consequatur deleniti harum neque officia praesentium, quo quos recusandae reiciendis temporibus velit vitae? Iste magnam porro reiciendis?</h3>
         <Footer/>
       </div>
     </div>
