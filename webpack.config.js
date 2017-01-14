@@ -8,7 +8,6 @@ var config = {
     inline: true,
     port: 4000
   },
-
   module: {
     loaders: [
       {
@@ -26,5 +25,4 @@ var config = {
     ]
   }
 };
-
 module.exports = config;

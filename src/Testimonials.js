@@ -1,4 +1,4 @@
-import styles from './App.scss'
+import styles from './Home.scss'
 import React from 'react'
 import Navbar from './Navbar.js'
 import Footer from './Footer.js'
