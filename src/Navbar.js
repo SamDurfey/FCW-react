@@ -1,6 +1,7 @@
 import styles from './Navbar.scss'
 import React from 'react'
 import { Link } from 'react-router'
+import Services from './Services.js'
 
 export default React.createClass({
   render() {
@@ -25,8 +26,8 @@ export default React.createClass({
         <div className="nav-wrapper">
           <ul className="left hide-on-med-and-down">
             <li><a href="/">Home</a></li>
-            <li><a className="dropdown-button" href="/services" data-activates="services-dropdown">Services
-              Available</a></li>
+            <li><Link className="dropdown-button" to={'/services'} data-activates="services-dropdown">Services
+              Available</Link></li>
             <li><a className="dropdown-button" href="/center" data-activates="center-dropdown">Our
               Center</a></li>
             <li><a href="/boutique">Wellness Boutique</a></li>
